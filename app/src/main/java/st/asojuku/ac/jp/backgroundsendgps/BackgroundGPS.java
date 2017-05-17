@@ -22,7 +22,7 @@ public class BackgroundGPS extends Service implements LocationListener {
 
     private LocationManager locationManager;
 
-    private static final int MinTime = 1800000;
+    private static final int MinTime = 300000;
     private static final float MinDistance = 0;
 
     @Override

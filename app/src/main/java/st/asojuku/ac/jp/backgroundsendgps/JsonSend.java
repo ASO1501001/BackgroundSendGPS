@@ -31,7 +31,7 @@ public class JsonSend extends AsyncTask<String,Void,Void> {
 
 
 
-    private final String SENDURL = "http://163.44.165.36/php_debug/php_code/jsonReceive.php";
+    private final String SENDURL = "http://"+ R.string.server_ip +"/php_debug/php_code/jsonReceive.php";
 
 
     @Override

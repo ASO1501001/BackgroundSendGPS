@@ -48,6 +48,15 @@ public class MainActivity extends AppCompatActivity  implements LocationListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FirstConnect firstConnect = new FirstConnect(this);
+
+        if(firstConnect.isFirstFlg()){
+            firstConnect.execute();
+        }
+
+
+
+
         if(Build.VERSION.SDK_INT >= 23){
             checkPermission();
         }
